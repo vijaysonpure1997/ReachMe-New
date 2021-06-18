@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		%svelte.head%
+	</head>
+	<body>
+		<div id="svelte">%svelte.body%</div>
+	</body>
+</html>
+
+<!--  --------------------------------------------------------------------  -->
+<!-- <script>
+	let formobj = {
+	 "user":"",
+		"pass":""
+	}
+	let apidata= {
+		"auth":"signup",
+		"c_id":"3v9h9sli9f0c4bhepe81vsho1j",
+		"user":"",
+		"pass":"",
+   
+	}
+	async function handlesubmit() {
+		apidata.user=formobj.user
+		apidata.pass=formobj.pass
+	 const res = await fetch("https://nh3xq2b2xl.execute-api.ap-south-1.amazonaws.com/default/botocognitoauth",{
+	  method:'POST',
+		   mode:"no-cors",
+		body:JSON.stringify(apidata),
+		   header:{
+	  "Content-type":"application/json"
+	   }
+										   }) 
+	   
+	   res.json().then((e) =>{
+	 console.log(e)
+	   })
+	}
+	   
+   </script>
+   
+	<form>
+		<div>
+				 User : <input type="text" bind:value={formobj.user}>
+		</div>
+	 <div>
+			Password : <input type="password" bind:value={formobj.pass}>
+		</div>
+	   <button on:click={handlesubmit}>
+		   Submit
+		</button>
+   </form>
+   
+   {JSON.stringify(formobj)}
+   {JSON.stringify(apidata)} -->
